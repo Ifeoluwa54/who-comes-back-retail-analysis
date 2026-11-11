@@ -31,7 +31,7 @@ Screenshots (overview.png, retention.png, ltv.png, gateway.png) and a PDF export
 
 ## How it was built
 
-1. **Clean the data** (`day_1_analysis_v2.py`): set aside returns, remove postage and fee lines, remove rows with no customer ID, and drop the incomplete final month.
+1. **Clean the data** (`day_1_analysis_v2.ipynb`): set aside returns, remove postage and fee lines, remove rows with no customer ID, and drop the incomplete final month.
 2. **Define cohorts** by each customer's first purchase month. Customers first seen in the file's first month are excluded from cohort, repeat and LTV figures, because their true first order is unknown.
 3. **Calculate** repeat rate, retention, 365-day revenue, first-order value bands, gateway products and RFM segments.
 4. **Build the dashboard** in Power BI from the output tables, with DAX measures written for each page.
@@ -42,7 +42,7 @@ Full definitions and every cleaning count are in [`methodology.md`](methodology.
 
 1. Download **Online Retail II** from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/502/online+retail+ii) and save it as `online_retail_II.csv`. Check the licence on that page.
 2. Install the requirements: `pip install pandas numpy`
-3. Run: `python analysis/day_1_analysis_v2.py online_retail_II.csv`
+3. Run: `day_1_analysis_v2.ipynb online_retail_II.csv`
 4. The script writes a `day_1_outputs` folder with the tables used in the dashboard and a `summary.txt` with the cleaning log, built-in checks and headline numbers.
 
 The raw dataset is not included in this repository.
@@ -59,7 +59,7 @@ The raw dataset is not included in this repository.
 
 ## Tools and AI use
 
-I used an AI assistant to help write the Python analysis script. I reviewed the logic, ran it, and checked the results against the raw data. I designed and built the Power BI dashboard myself.
+I used an AI assistant to help write the Python analysis script. I reviewed the logic, ran it, and checked the results against the raw data. I built the Power BI dashboard myself.
 
 ## Data source
 
