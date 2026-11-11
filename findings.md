@@ -45,14 +45,6 @@ Among products with at least 50 first-time buyers, the top 15 have repeat rates 
 The "At risk" segment has 667 customers (11.5%), who bought often (average 5.1 order days) and averaged £2,260 each, but whose last order was a median of 352 days ago. Together they brought in £1.5M (8.9% of revenue). By contrast, "Lost or low" is 1,713 customers (29.4%) but only 4.8% of revenue.
 *For a retailer:* personal outreach to the At risk group is worth more than broad reactivation emails to the Lost or low group.
 
-## Safe headline numbers for a post
-
-You can use any of these as long as you state the dataset and the 2009 to 2011 timeframe:
-- 56.4% of new customers reordered within 180 days.
-- The largest quarter of first orders had a 64.5% repeat rate against 45.6% for the smallest.
-- The top 10% of customers brought in 63.5% of revenue.
-- 667 previously frequent customers have gone quiet.
-
 ## What not to claim
 
 - That any product "causes" repeat buying.
