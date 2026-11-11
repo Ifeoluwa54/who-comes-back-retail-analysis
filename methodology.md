@@ -1,7 +1,5 @@
 # Methodology: "Who Comes Back?"
 
-Read this fully before you post. Every number in the findings comes from the steps below.
-Currency is pounds sterling (the dataset's prices are in GBP).
 
 ## 1. Data
 
