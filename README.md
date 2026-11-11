@@ -2,7 +2,7 @@
 
 An analysis of two years of transactions from a UK online gift retailer, built to answer one question: **which customers come back to buy again, and what sets them apart?** The results are in a four-page Power BI dashboard, supported by a reproducible Python analysis.
 
-![Overview page](screenshots/overview.png)
+![Overview page](overview.png)
 
 ## Key findings
 
@@ -16,7 +16,7 @@ An analysis of two years of transactions from a UK online gift retailer, built t
 | Share of a cohort still ordering in month 1 / month 12 | **21.0%** / **18.4%** |
 | Previously frequent customers who have gone quiet ("at risk") | **667**, about £1.5M past revenue |
 
-Every finding is labelled strong, moderate or tentative in [`findings.md`](docs/findings.md). In short, the gateway-product results are leads to investigate, not proof that any product causes repeat buying.
+Every finding is labelled strong, moderate or tentative in [`findings.md`](findings.md). In short, the gateway-product results are leads to investigate, not proof that any product causes repeat buying.
 
 ## Dashboard pages
 
@@ -27,16 +27,16 @@ Every finding is labelled strong, moderate or tentative in [`findings.md`](docs/
 | LTV | Revenue per customer over time, and first-year revenue by size of first order |
 | Gateway | Products in a first order that are linked to higher repeat rates, with the caveats |
 
-Screenshots are in [`screenshots/`](screenshots/) and a PDF export is in [`dashboard/`](dashboard/).
+Screenshots (overview.png, retention.png, ltv.png, gateway.png) and a PDF export (who_comes_back.pdf) are in this repository.
 
 ## How it was built
 
-1. **Clean the data** (`analysis/day_1_analysis_v2.py`): set aside returns, remove postage and fee lines, remove rows with no customer ID, and drop the incomplete final month.
+1. **Clean the data** (`day_1_analysis_v2.py`): set aside returns, remove postage and fee lines, remove rows with no customer ID, and drop the incomplete final month.
 2. **Define cohorts** by each customer's first purchase month. Customers first seen in the file's first month are excluded from cohort, repeat and LTV figures, because their true first order is unknown.
 3. **Calculate** repeat rate, retention, 365-day revenue, first-order value bands, gateway products and RFM segments.
 4. **Build the dashboard** in Power BI from the output tables, with DAX measures written for each page.
 
-Full definitions and every cleaning count are in [`methodology.md`](docs/methodology.md).
+Full definitions and every cleaning count are in [`methodology.md`](methodology.md).
 
 ## Reproduce it
 
